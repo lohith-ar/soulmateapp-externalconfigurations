@@ -29,14 +29,14 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public SoulmateUser updateUser(Integer id, SoulmateUser user) {
+    public SoulmateUser updateUseronID(Integer id, SoulmateUser user) {
         Optional<SoulmateUser> user1= userrepo.findById(id);
         user.setId(id);
         return userrepo.save(user);
     }
 
     @Override
-    public void deleteUser(int id) {
+    public void deleteUseronID(int id) {
         Optional<SoulmateUser> user1= userrepo.findById(id);
         userrepo.deleteById(id);
     }

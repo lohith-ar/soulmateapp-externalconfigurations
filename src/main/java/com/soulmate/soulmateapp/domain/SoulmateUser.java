@@ -12,6 +12,15 @@ public class SoulmateUser {
     private String name;
     private String gender;
 
+    @Override
+    public String toString() {
+        return "SoulmateUser{" +
+                "id=" + id +
+                ", age=" + age +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                '}';
+    }
 
     public SoulmateUser() {
     }
